@@ -30,8 +30,10 @@ jobs:
         node-version: ${{ env.NODE_VERSION }}
         cache: 'npm'
         cache-dependency-path: ${{ env.WORKING_DIRECTORY }}/package-lock.json
+      
     - name: Install dependencies
       run: npm install
+      working-directory: ${{ env.WORKING_DIRECTORY }}
     - name: Run linting
       run: |
         if npm run lint --if-present; then
