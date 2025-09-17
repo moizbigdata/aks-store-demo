@@ -11,7 +11,7 @@ on:
 
 
 env:
-  NODE_VERSION: '18.0'
+  NODE_VERSION: '22.x'
   WORKING_DIRECTORY: './src/store-front'
 
 
